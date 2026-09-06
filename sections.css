@@ -1,0 +1,175 @@
+/* ===================================================================
+   SECTIONS.CSS
+   Covers the remaining homepage sections that don't need a large,
+   dedicated stylesheet of their own: Learn by Doing, Why this
+   platform, Platform statistics, Testimonials, and the Final CTA.
+   Grouping these together (rather than one file per section) keeps
+   the project from having a lot of near-empty CSS files.
+   =================================================================== */
+
+/* -------------------------------------------------------------
+   LEARN BY DOING
+   ------------------------------------------------------------- */
+.doing {
+  padding-block: var(--space-9);
+}
+
+.doing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+}
+
+.doing-card {
+  padding: var(--space-5);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+}
+
+.doing-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-surface-alt);
+  color: var(--color-primary);
+  margin-bottom: var(--space-4);
+}
+
+.doing-card-title {
+  margin-bottom: var(--space-2);
+}
+
+.doing-card-desc {
+  font-size: 0.9rem;
+}
+
+/* -------------------------------------------------------------
+   WHY THIS PLATFORM
+   Two-column layout: a short intro on the left, a list of
+   benefits on the right. Grid handles the two unequal columns
+   cleanly.
+   ------------------------------------------------------------- */
+.why {
+  padding-block: var(--space-9);
+  background-color: var(--color-surface-alt);
+}
+
+.why-inner {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: var(--space-8);
+}
+
+.why-intro h2 {
+  margin-bottom: var(--space-4);
+}
+
+.why-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6) var(--space-6);
+}
+
+.why-item h3 {
+  font-size: 1.05rem;
+  margin-bottom: var(--space-2);
+}
+
+.why-item p {
+  font-size: 0.9rem;
+}
+
+/* -------------------------------------------------------------
+   PLATFORM STATISTICS
+   ------------------------------------------------------------- */
+.stats {
+  padding-block: var(--space-7);
+  border-top: var(--border-width) solid var(--color-border);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.stats-note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-6);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+/* -------------------------------------------------------------
+   TESTIMONIALS
+   ------------------------------------------------------------- */
+.testimonials {
+  padding-block: var(--space-9);
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+
+.testimonial-card {
+  padding: var(--space-6);
+  background-color: var(--color-surface);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.testimonial-quote {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--color-text);
+  line-height: 1.5;
+  margin-bottom: var(--space-4);
+}
+
+.testimonial-author {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+/* -------------------------------------------------------------
+   FINAL CTA
+   ------------------------------------------------------------- */
+.final-cta {
+  padding-block: var(--space-9);
+  background-color: var(--color-surface-alt);
+  text-align: center;
+}
+
+.final-cta-inner {
+  max-width: 560px;
+  margin-inline: auto;
+}
+
+.final-cta h2 {
+  margin-bottom: var(--space-3);
+}
+
+.final-cta p {
+  margin-bottom: var(--space-6);
+}
