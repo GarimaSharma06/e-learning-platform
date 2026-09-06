@@ -1,0 +1,787 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pathwork — Learn skills. Build projects. Grow your career.</title>
+  <meta name="description" content="Pathwork is a structured e-learning platform. Follow guided learning paths, build real projects, and track your progress." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="navbar.css" >
+  <link rel="stylesheet" href="hero.css" >
+  <link rel="stylesheet" href="courses.css" >
+  <link rel="stylesheet" href="paths.css" >
+  <link rel="stylesheet" href="sections.css" >
+  <link rel="stylesheet" href="footer.css" >
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+
+  <header class="navbar">
+    <div class="navbar-inner container">
+
+      <a href="index.html" class="navbar-logo">
+        <span class="navbar-logo-mark" aria-hidden="true">
+
+            <!-- SVG->Scalable Vector Graphics -->
+
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 20V16H10V20H4Z" fill="currentColor"/>
+            <path d="M11 20V12H17V20H11Z" fill="currentColor"/>
+            <path d="M18 20V6H24V20H18Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="navbar-logo-text">Pathwork</span>
+      </a>
+
+      <nav class="navbar-nav" aria-label="Primary">
+        <ul class="navbar-links">
+          <li><a href="#courses">Explore</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#paths">Learning Paths</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+      </nav>
+
+      <form class="navbar-search" role="search" aria-label="Site search">
+        <label for="navbar-search-input" class="visually-hidden">Search courses</label>
+        <input
+          type="search"
+          id="navbar-search-input"
+          name="q"
+          placeholder="Search courses..."
+        />
+        <button type="submit" class="navbar-search-button" aria-label="Search">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7" cy="7" r="5.25" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M11 11L14.5 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </form>
+
+      <div class="navbar-actions">
+        <a href="#login" class="btn btn-text">Log in</a>
+        <a href="#signup" class="btn btn-primary">Sign up</a>
+      </div>
+
+      <!-- Mobile menu button: not functional yet, wired up with JS later -->
+      <button class="navbar-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navbar-nav">
+        <span class="navbar-toggle-bar"></span>
+        <span class="navbar-toggle-bar"></span>
+        <span class="navbar-toggle-bar"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    
+
+    <section class="hero">
+
+    <p class="hero-top">
+        FOR PEOPLE BUILDING A CAREER, NOT JUST A RESUME
+    </p>
+
+    <h1>
+        Learn skills. Build projects. Grow your career.
+    </h1>
+
+    <p class="hero-text">
+        Pathwork is a structured learning platform where you can learn
+        new skills, build projects, practice, and grow your career.
+    </p>
+
+    <div class="hero-search">
+        <input 
+            type="text" 
+            placeholder="What do you want to learn?"
+        >
+
+        <button type="button">Search</button>
+    </div>
+
+    <div class="hero-buttons">
+        <a href="#courses">Explore Courses</a>
+        <a href="#paths">Explore Learning Paths</a>
+    </div>
+
+    <!-- 500+ Stats -->
+    <div class="stats">
+
+        <div class="stat">
+            <h3>500+</h3>
+            <p>Courses</p>
+        </div>
+
+        <div class="stat">
+            <h3>50+</h3>
+            <p>Learning paths</p>
+        </div>
+
+        <div class="stat">
+            <h3>100+</h3>
+            <p>Projects</p>
+        </div>
+
+        <div class="stat">
+            <h3>20+</h3>
+            <p>Skill areas</p>
+        </div>
+
+    </div>
+
+</section>
+</section>
+
+    <section class="goals" id="goals" aria-labelledby="goals-heading">
+      <div class="container">
+
+        <div class="section-heading">
+          <h2 id="goals-heading">What are you trying to do?</h2>
+          <p>Start from your goal, and we'll point you to the right courses and paths.</p>
+        </div>
+
+        <ul class="goals-grid">
+
+          <li class="goal-card">
+            <a href="#courses" class="goal-card-link">
+              <span class="goal-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 20L9 10L13 15L16 9L20 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="goal-card-title">Start a career</span>
+              <span class="goal-card-desc">Follow a structured path built for a specific job, from fundamentals to portfolio.</span>
+            </a>
+          </li>
+
+          <li class="goal-card">
+            <a href="#courses" class="goal-card-link">
+              <span class="goal-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 3L14.5 9L21 9.5L16 13.5L17.5 20L12 16.5L6.5 20L8 13.5L3 9.5L9.5 9L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="goal-card-title">Improve my skills</span>
+              <span class="goal-card-desc">Sharpen what you already know with focused, practical courses.</span>
+            </a>
+          </li>
+
+          <li class="goal-card">
+            <a href="#courses" class="goal-card-link">
+              <span class="goal-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="4" width="7" height="7" stroke="currentColor" stroke-width="1.6"/>
+                  <rect x="13" y="4" width="7" height="7" stroke="currentColor" stroke-width="1.6"/>
+                  <rect x="4" y="13" width="7" height="7" stroke="currentColor" stroke-width="1.6"/>
+                  <rect x="13" y="13" width="7" height="7" stroke="currentColor" stroke-width="1.6"/>
+                </svg>
+              </span>
+              <span class="goal-card-title">Build real projects</span>
+              <span class="goal-card-desc">Apply what you learn immediately with guided, portfolio-ready projects.</span>
+            </a>
+          </li>
+
+          <li class="goal-card">
+            <a href="#courses" class="goal-card-link">
+              <span class="goal-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 4L20 8V12C20 16.5 16.8 19.9 12 21C7.2 19.9 4 16.5 4 12V8L12 4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                  <path d="M9 12L11.2 14L15.5 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="goal-card-title">Prepare for certifications</span>
+              <span class="goal-card-desc">Study toward recognized certifications with a clear, sequenced curriculum.</span>
+            </a>
+          </li>
+
+          <li class="goal-card">
+            <a href="#courses" class="goal-card-link">
+              <span class="goal-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"/>
+                  <path d="M12 8V12L14.5 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </span>
+              <span class="goal-card-title">Explore something new</span>
+              <span class="goal-card-desc">Not sure yet? Browse categories and see where your curiosity takes you.</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="courses" id="courses" aria-labelledby="courses-heading">
+      <div class="container">
+
+        <div class="section-heading section-heading-row">
+          <div>
+            <h2 id="courses-heading">Popular courses</h2>
+            <p>A sample of what learners are taking right now. Demo data for this stage of the project.</p>
+          </div>
+
+          <div class="course-filters" role="group" aria-label="Filter courses by category">
+            <button type="button" class="filter-chip is-active">All</button>
+            <button type="button" class="filter-chip">Programming</button>
+            <button type="button" class="filter-chip">Web Development</button>
+            <button type="button" class="filter-chip">Data</button>
+            <button type="button" class="filter-chip">Design</button>
+          </div>
+        </div>
+
+        <ul class="course-grid">
+
+          <li class="course-card">
+            <a href="#" class="course-card-link">
+              <div class="course-card-thumb" style="background-color:#EFE6D8;">
+                <img src="assets/images/course-java.svg" alt="" loading="lazy" />
+              </div>
+              <div class="course-card-body">
+                <span class="course-card-category">Programming</span>
+                <h3 class="course-card-title">Java Programming: From Zero to Backend</h3>
+                <p class="course-card-instructor">Taught by Daniel Ortiz</p>
+                <div class="course-card-rating">
+                  <span class="rating-stars" aria-hidden="true">★★★★★</span>
+                  <span class="rating-value">4.8</span>
+                  <span class="rating-count">(2,340 learners)</span>
+                </div>
+                <ul class="course-card-meta">
+                  <li>Beginner</li>
+                  <li>18 hours</li>
+                  <li>42 lessons</li>
+                </ul>
+                <p class="course-card-price">
+                  <span class="price-current">$0</span>
+                  <span class="price-note">Free demo pricing</span>
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li class="course-card">
+            <a href="#" class="course-card-link">
+              <div class="course-card-thumb" style="background-color:#E3ECE6;">
+                <img src="assets/images/course-js.svg" alt="" loading="lazy" />
+              </div>
+              <div class="course-card-body">
+                <span class="course-card-category">Web Development</span>
+                <h3 class="course-card-title">Modern JavaScript Fundamentals</h3>
+                <p class="course-card-instructor">Taught by Priya Nair</p>
+                <div class="course-card-rating">
+                  <span class="rating-stars" aria-hidden="true">★★★★★</span>
+                  <span class="rating-value">4.9</span>
+                  <span class="rating-count">(5,120 learners)</span>
+                </div>
+                <ul class="course-card-meta">
+                  <li>Beginner</li>
+                  <li>14 hours</li>
+                  <li>36 lessons</li>
+                </ul>
+                <p class="course-card-price">
+                  <span class="price-current">$0</span>
+                  <span class="price-note">Free demo pricing</span>
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li class="course-card">
+            <a href="#" class="course-card-link">
+              <div class="course-card-thumb" style="background-color:#E7EAF4;">
+                <img src="assets/images/course-react.svg" alt="" loading="lazy" />
+              </div>
+              <div class="course-card-body">
+                <span class="course-card-category">Web Development</span>
+                <h3 class="course-card-title">React Development in Practice</h3>
+                <p class="course-card-instructor">Taught by Marcus Lee</p>
+                <div class="course-card-rating">
+                  <span class="rating-stars" aria-hidden="true">★★★★★</span>
+                  <span class="rating-value">4.7</span>
+                  <span class="rating-count">(3,865 learners)</span>
+                </div>
+                <ul class="course-card-meta">
+                  <li>Intermediate</li>
+                  <li>22 hours</li>
+                  <li>51 lessons</li>
+                </ul>
+                <p class="course-card-price">
+                  <span class="price-current">$0</span>
+                  <span class="price-note">Free demo pricing</span>
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li class="course-card">
+            <a href="#" class="course-card-link">
+              <div class="course-card-thumb" style="background-color:#F4E7DD;">
+                <img src="assets/images/course-python.svg" alt="" loading="lazy" />
+              </div>
+              <div class="course-card-body">
+                <span class="course-card-category">Programming</span>
+                <h3 class="course-card-title">Python for Beginners</h3>
+                <p class="course-card-instructor">Taught by Sara Kim</p>
+                <div class="course-card-rating">
+                  <span class="rating-stars" aria-hidden="true">★★★★★</span>
+                  <span class="rating-value">4.8</span>
+                  <span class="rating-count">(7,210 learners)</span>
+                </div>
+                <ul class="course-card-meta">
+                  <li>Beginner</li>
+                  <li>12 hours</li>
+                  <li>30 lessons</li>
+                </ul>
+                <p class="course-card-price">
+                  <span class="price-current">$0</span>
+                  <span class="price-note">Free demo pricing</span>
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li class="course-card">
+            <a href="#" class="course-card-link">
+              <div class="course-card-thumb" style="background-color:#EDE3EE;">
+                <img src="assets/images/course-dsa.svg" alt="" loading="lazy" />
+              </div>
+              <div class="course-card-body">
+                <span class="course-card-category">Data</span>
+                <h3 class="course-card-title">Data Structures &amp; Algorithms</h3>
+                <p class="course-card-instructor">Taught by Daniel Ortiz</p>
+                <div class="course-card-rating">
+                  <span class="rating-stars" aria-hidden="true">★★★★★</span>
+                  <span class="rating-value">4.6</span>
+                  <span class="rating-count">(4,032 learners)</span>
+                </div>
+                <ul class="course-card-meta">
+                  <li>Intermediate</li>
+                  <li>26 hours</li>
+                  <li>48 lessons</li>
+                </ul>
+                <p class="course-card-price">
+                  <span class="price-current">$0</span>
+                  <span class="price-note">Free demo pricing</span>
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li class="course-card">
+            <a href="#" class="course-card-link">
+              <div class="course-card-thumb" style="background-color:#E4EEF0;">
+                <img src="assets/images/course-uiux.svg" alt="" loading="lazy" />
+              </div>
+              <div class="course-card-body">
+                <span class="course-card-category">Design</span>
+                <h3 class="course-card-title">UI/UX Fundamentals</h3>
+                <p class="course-card-instructor">Taught by Priya Nair</p>
+                <div class="course-card-rating">
+                  <span class="rating-stars" aria-hidden="true">★★★★★</span>
+                  <span class="rating-value">4.7</span>
+                  <span class="rating-count">(2,981 learners)</span>
+                </div>
+                <ul class="course-card-meta">
+                  <li>Beginner</li>
+                  <li>10 hours</li>
+                  <li>28 lessons</li>
+                </ul>
+                <p class="course-card-price">
+                  <span class="price-current">$0</span>
+                  <span class="price-note">Free demo pricing</span>
+                </p>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="paths" id="paths" aria-labelledby="paths-heading">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-eyebrow">Learning paths</p>
+          <h2 id="paths-heading">Learn with a path, not a playlist.</h2>
+          <p>
+            A path strings courses and projects together in the right order, so you
+            always know what to learn next instead of guessing which video to click.
+          </p>
+        </div>
+
+        <ul class="path-grid">
+
+          <li class="path-card">
+            <div class="path-card-header">
+              <h3 class="path-card-title">Frontend Developer</h3>
+              <p class="path-card-desc">Go from a blank page to a deployed, interactive website.</p>
+            </div>
+
+            <ol class="path-steps" aria-label="Path sequence">
+              <li class="path-step">HTML</li>
+              <li class="path-step">CSS</li>
+              <li class="path-step">JavaScript</li>
+              <li class="path-step">Git</li>
+              <li class="path-step">React</li>
+              <li class="path-step path-step-final">Projects</li>
+            </ol>
+
+            <ul class="path-card-meta">
+              <li><span class="path-meta-number">6</span> courses</li>
+              <li><span class="path-meta-number">~80h</span> estimated</li>
+              <li><span class="path-meta-number">Beginner</span> level</li>
+              <li><span class="path-meta-number">3</span> projects</li>
+            </ul>
+
+            <a href="#" class="btn btn-secondary path-card-cta">View path</a>
+          </li>
+
+          <li class="path-card">
+            <div class="path-card-header">
+              <h3 class="path-card-title">Python Developer</h3>
+              <p class="path-card-desc">Build a foundation in Python, then apply it to real scripts and tools.</p>
+            </div>
+
+            <ol class="path-steps" aria-label="Path sequence">
+              <li class="path-step">Python Basics</li>
+              <li class="path-step">Data Types</li>
+              <li class="path-step">OOP</li>
+              <li class="path-step">Testing</li>
+              <li class="path-step path-step-final">Projects</li>
+            </ol>
+
+            <ul class="path-card-meta">
+              <li><span class="path-meta-number">5</span> courses</li>
+              <li><span class="path-meta-number">~60h</span> estimated</li>
+              <li><span class="path-meta-number">Beginner</span> level</li>
+              <li><span class="path-meta-number">2</span> projects</li>
+            </ul>
+
+            <a href="#" class="btn btn-secondary path-card-cta">View path</a>
+          </li>
+
+          <li class="path-card">
+            <div class="path-card-header">
+              <h3 class="path-card-title">Data Analyst</h3>
+              <p class="path-card-desc">Learn to clean, analyze, and present data that people actually use.</p>
+            </div>
+
+            <ol class="path-steps" aria-label="Path sequence">
+              <li class="path-step">Excel</li>
+              <li class="path-step">SQL</li>
+              <li class="path-step">Python</li>
+              <li class="path-step">Visualization</li>
+              <li class="path-step path-step-final">Capstone</li>
+            </ol>
+
+            <ul class="path-card-meta">
+              <li><span class="path-meta-number">7</span> courses</li>
+              <li><span class="path-meta-number">~90h</span> estimated</li>
+              <li><span class="path-meta-number">Intermediate</span> level</li>
+              <li><span class="path-meta-number">2</span> projects</li>
+            </ul>
+
+            <a href="#" class="btn btn-secondary path-card-cta">View path</a>
+          </li>
+
+          <li class="path-card">
+            <div class="path-card-header">
+              <h3 class="path-card-title">Java Developer</h3>
+              <p class="path-card-desc">Master core Java, then build backend services from scratch.</p>
+            </div>
+
+            <ol class="path-steps" aria-label="Path sequence">
+              <li class="path-step">Java Syntax</li>
+              <li class="path-step">OOP</li>
+              <li class="path-step">Collections</li>
+              <li class="path-step">Spring</li>
+              <li class="path-step path-step-final">Projects</li>
+            </ol>
+
+            <ul class="path-card-meta">
+              <li><span class="path-meta-number">6</span> courses</li>
+              <li><span class="path-meta-number">~85h</span> estimated</li>
+              <li><span class="path-meta-number">Intermediate</span> level</li>
+              <li><span class="path-meta-number">3</span> projects</li>
+            </ul>
+
+            <a href="#" class="btn btn-secondary path-card-cta">View path</a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="doing" id="doing" aria-labelledby="doing-heading">
+      <div class="container">
+
+        <div class="section-heading">
+          <h2 id="doing-heading">More than videos</h2>
+          <p>Watching a lesson isn't the same as knowing how to do it. Every course pairs
+             instruction with practice.</p>
+        </div>
+
+        <ul class="doing-grid">
+          <li class="doing-card">
+            <span class="doing-card-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="6" width="18" height="12" rx="1" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M10 22H16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M13 18V22" stroke="currentColor" stroke-width="1.6"/>
+              </svg>
+            </span>
+            <h3 class="doing-card-title">Projects</h3>
+            <p class="doing-card-desc">Build practical applications you can show, not just describe.</p>
+          </li>
+
+          <li class="doing-card">
+            <span class="doing-card-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 8L4 13L9 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17 8L22 13L17 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 5L11 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3 class="doing-card-title">Coding Practice</h3>
+            <p class="doing-card-desc">Strengthen technical skills through short, focused exercises.</p>
+          </li>
+
+          <li class="doing-card">
+            <span class="doing-card-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="13" cy="13" r="9" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M13 8V13L16.5 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h3 class="doing-card-title">Quizzes</h3>
+            <p class="doing-card-desc">Check your understanding right after each lesson, while it's fresh.</p>
+          </li>
+
+          <li class="doing-card">
+            <span class="doing-card-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 4H16L20 8V22H6V4H8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M10 12H16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M10 16H16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3 class="doing-card-title">Assignments</h3>
+            <p class="doing-card-desc">Apply what you've learned to problems modeled on real work.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ WHY THIS PLATFORM ============ -->
+    <section class="why" id="why" aria-labelledby="why-heading">
+      <div class="container why-inner">
+
+        <div class="why-intro">
+          <p class="section-eyebrow">Why Pathwork</p>
+          <h2 id="why-heading">Built around finishing, not just starting.</h2>
+          <p>
+            Plenty of platforms make it easy to start a course. Pathwork is built
+            around the harder part: actually finishing, and having something to
+            show for it.
+          </p>
+        </div>
+
+        <ul class="why-list">
+          <li class="why-item">
+            <h3>Structured learning paths</h3>
+            <p>Courses are ordered for you, so you always know the next step instead of choosing at random.</p>
+          </li>
+          <li class="why-item">
+            <h3>Practical projects</h3>
+            <p>Each path ends in projects you build yourself, so you leave with proof of what you can do.</p>
+          </li>
+          <li class="why-item">
+            <h3>Progress tracking</h3>
+            <p>See exactly how far you are through a course or path, and pick up right where you left off.</p>
+          </li>
+          <li class="why-item">
+            <h3>Industry-relevant skills</h3>
+            <p>Course content is scoped around what's actually used on the job, not just theory.</p>
+          </li>
+          <li class="why-item">
+            <h3>Recognizable certificates</h3>
+            <p>Finish a path and get a certificate you can add to your resume or profile.</p>
+          </li>
+          <li class="why-item">
+            <h3>Learn at your own pace</h3>
+            <p>No deadlines or cohorts. Pause a path for a month and pick it back up without losing progress.</p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- ============ PLATFORM STATISTICS ============ -->
+    <section class="stats" id="stats" aria-labelledby="stats-heading">
+      <div class="container">
+        <h2 id="stats-heading" class="visually-hidden">Platform statistics</h2>
+        <p class="stats-note">Demo statistics — for illustration only, not live platform data.</p>
+        <ul class="stats-grid">
+          <li class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Courses</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Learning paths</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Projects</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Skill areas</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+
+        <div class="section-heading">
+          <h2 id="testimonials-heading">What learners say</h2>
+          <p>Sample testimonials written for this demo — not real platform users.</p>
+        </div>
+
+        <ul class="testimonial-grid">
+          <li class="testimonial-card">
+            <p class="testimonial-quote">
+              "Having the courses laid out in order made the biggest difference for me.
+              I stopped wondering what to watch next and just followed the path."
+            </p>
+            <p class="testimonial-author">— Demo learner, Frontend Developer path</p>
+          </li>
+          <li class="testimonial-card">
+            <p class="testimonial-quote">
+              "The project at the end of each section forced me to actually use what
+              I'd learned instead of just recognizing it in a video."
+            </p>
+            <p class="testimonial-author">— Demo learner, Python Developer path</p>
+          </li>
+          <li class="testimonial-card">
+            <p class="testimonial-quote">
+              "I was switching careers and didn't know where to start. The path gave
+              me a plan I could actually stick to around a full-time job."
+            </p>
+            <p class="testimonial-author">— Demo learner, Data Analyst path</p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="final-cta" id="get-started" aria-labelledby="final-cta-heading">
+      <div class="container final-cta-inner">
+        <h2 id="final-cta-heading">Your next skill starts here.</h2>
+        <p>Pick a path, follow it at your own pace, and finish with something real to show for it.</p>
+        <a href="#signup" class="btn btn-primary btn-large">Get Started — It's Free</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <div class="footer-columns">
+
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo footer-logo">
+            <span class="navbar-logo-mark" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 20V16H10V20H4Z" fill="currentColor"/>
+                <path d="M11 20V12H17V20H11Z" fill="currentColor"/>
+                <path d="M18 20V6H24V20H18Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="navbar-logo-text">Pathwork</span>
+          </a>
+          <p class="footer-tagline">Structured learning for people building a career.</p>
+        </div>
+
+        <nav class="footer-nav-group" aria-label="Platform">
+          <h3>Platform</h3>
+          <ul>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#paths">Learning Paths</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Practice</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav-group" aria-label="Resources">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Documentation</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav-group" aria-label="Company">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav-group" aria-label="For instructors">
+          <h3>For Instructors</h3>
+          <ul>
+            <li><a href="#">Teach on Pathwork</a></li>
+            <li><a href="#">Instructor Resources</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav-group" aria-label="Legal">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Pathwork. Student project — demo content only.</p>
+        <ul class="footer-social">
+          <li>
+            <a href="#" aria-label="Pathwork on GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.58 2 12.19C2 16.68 4.87 20.47 8.84 21.8C9.34 21.89 9.5 21.58 9.5 21.31C9.5 21.07 9.49 20.24 9.49 19.36C7 19.89 6.35 18.79 6.15 18.22C6.03 17.92 5.52 16.98 5.08 16.73C4.72 16.53 4.2 16 5.07 15.99C5.89 15.98 6.47 16.75 6.67 17.06C7.61 18.63 9.1 18.18 9.68 17.91C9.77 17.24 10.03 16.79 10.32 16.53C8.05 16.28 5.68 15.4 5.68 11.5C5.68 10.39 6.03 9.47 6.6 8.76C6.5 8.51 6.19 7.47 6.7 6.08C6.7 6.08 7.5 5.82 9.5 7.17C10.32 6.94 11.2 6.83 12.08 6.83C12.96 6.83 13.84 6.94 14.66 7.17C16.66 5.81 17.46 6.08 17.46 6.08C17.97 7.47 17.66 8.51 17.56 8.76C18.13 9.47 18.48 10.38 18.48 11.5C18.48 15.41 16.1 16.28 13.83 16.53C14.19 16.84 14.5 17.44 14.5 18.37C14.5 19.7 14.49 20.97 14.49 21.31C14.49 21.58 14.65 21.9 15.15 21.8C19.12 20.46 22 16.68 22 12.19C22 6.58 17.52 2 12 2Z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Pathwork on LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.94 5.5C6.94 6.6 6.06 7.5 4.97 7.5C3.88 7.5 3 6.6 3 5.5C3 4.4 3.88 3.5 4.97 3.5C6.06 3.5 6.94 4.4 6.94 5.5ZM3.29 9H6.65V21H3.29V9ZM9.33 9H12.55V10.56H12.6C13.05 9.71 14.14 8.8 15.77 8.8C19.15 8.8 19.8 11 19.8 13.85V21H16.44V14.53C16.44 13.09 16.41 11.24 14.42 11.24C12.4 11.24 12.09 12.8 12.09 14.42V21H9.33V9Z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

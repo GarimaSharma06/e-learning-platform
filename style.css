@@ -1,0 +1,285 @@
+
+:root {
+  
+  --color-primary: #16324F;       
+  --color-primary-dark: #0E2238; 
+  --color-primary-light: #2C5078;  
+  --color-accent: #E7A33E;        
+  --color-accent-dark: #C9822A;
+
+  --color-bg: #FAF8F4;             
+  --color-surface: #FFFFFF;        
+  --color-surface-alt: #F3F0EA;    
+  --color-border: #E3DFD6;      
+
+  --color-text: #1C1C1C;          
+  --color-text-secondary: #5B5B5B; 
+  --color-text-muted: #8A8A8A;    
+  --color-text-on-primary: #FFFFFF;
+
+  /* Typography */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  /* Spacing scale (4px base unit) -- use these instead of one-off values */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* Shared layout values */
+  --container-width: 1180px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --border-width: 1px;
+
+  /* Shadows -- kept minimal, used only where they add real hierarchy */
+  --shadow-sm: 0 1px 2px rgba(28, 28, 28, 0.06);
+  --shadow-md: 0 8px 24px rgba(22, 50, 79, 0.08);
+
+  /* Motion */
+  --transition-fast: 150ms ease;
+}
+
+/* -------------------------------------------------------------
+   2. RESET / BASE
+   A small reset so default browser spacing doesn't fight with
+   our own spacing scale.
+   ------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* used for the in-page nav links (#courses, #paths, etc.) */
+}
+
+body,
+h1, h2, h3, h4,
+p,
+ul, ol,
+figure {
+  margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  font: inherit;
+  color: inherit;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Visible focus states for keyboard users. Never remove outline
+   without replacing it with something equally visible. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--color-primary-light);
+  outline-offset: 2px;
+}
+
+/* -------------------------------------------------------------
+   3. TYPOGRAPHY
+   Fraunces (serif, some character) for headings, Inter for body
+   copy, IBM Plex Mono for small data-like labels (course counts,
+   ratings, stats) — a small detail that reinforces the "practical,
+   data-aware" feel of the platform.
+   ------------------------------------------------------------- */
+h1, h2, h3 {
+  font-family: var(--font-display);
+  color: var(--color-primary);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  color: var(--color-text-secondary);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: var(--space-6);
+}
+
+
+
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: var(--space-4);
+  background: var(--color-primary);
+  color: var(--color-text-on-primary);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  z-index: 100;
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: var(--space-4);
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Shared heading block used at the top of most sections */
+.section-heading {
+  max-width: 620px;
+  margin-bottom: var(--space-7);
+}
+
+.section-heading h2 {
+  margin-bottom: var(--space-3);
+}
+
+.section-heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--space-6);
+  max-width: none;
+}
+
+.section-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-accent-dark);
+  margin-bottom: var(--space-3);
+}
+
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: var(--border-width) solid transparent;
+  transition: background-color var(--transition-fast),
+              color var(--transition-fast),
+              border-color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+
+.btn-text {
+  background-color: transparent;
+  color: var(--color-primary);
+  padding-inline: var(--space-3);
+}
+
+.btn-text:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+.btn-large {
+  padding: var(--space-4) var(--space-6);
+  font-size: 1rem;
+}
+
+
+.filter-chip {
+  padding: var(--space-2) var(--space-4);
+  border-radius: 999px;
+  border: var(--border-width) solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color var(--transition-fast),
+              color var(--transition-fast),
+              border-color var(--transition-fast);
+}
+
+.filter-chip:hover {
+  border-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.filter-chip.is-active {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
