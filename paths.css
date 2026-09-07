@@ -1,0 +1,105 @@
+.paths {
+  padding-block: var(--space-9);
+  background-color: var(--color-primary);
+}
+
+.paths .section-heading h2,
+.paths .section-heading p,
+.paths .section-eyebrow {
+  color: var(--color-text-on-primary);
+}
+
+.paths .section-heading p {
+  opacity: 0.75;
+}
+
+.paths .section-eyebrow {
+  color: var(--color-accent);
+}
+
+.path-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+}
+
+.path-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+}
+
+.path-card-header {
+  margin-bottom: var(--space-5);
+}
+
+.path-card-title {
+  margin-bottom: var(--space-2);
+}
+
+.path-card-desc {
+  font-size: 0.9rem;
+}
+
+
+.path-steps {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-bottom: var(--space-5);
+}
+
+.path-step {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-primary);
+  background-color: var(--color-surface-alt);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: 999px;
+  padding: var(--space-2) var(--space-3);
+  white-space: nowrap;
+  position: relative;
+}
+
+.path-step:not(:first-child)::before {
+  content: "";
+  display: inline-block;
+  width: var(--space-4);
+  height: var(--border-width);
+  background-color: var(--color-border);
+  margin-inline: var(--space-2);
+  vertical-align: middle;
+}
+
+.path-step-final {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+
+.path-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  padding-block: var(--space-4);
+  margin-bottom: var(--space-5);
+  border-top: var(--border-width) solid var(--color-border);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.path-meta-number {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.path-card-cta {
+  align-self: flex-start;
+  margin-top: auto;
+}
