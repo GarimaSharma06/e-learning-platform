@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pathwork — Learn skills. Build projects. Grow your career.</title>
+  <meta name="description" content="Pathwork is a structured e-learning platform. Follow guided learning paths, build real projects, and track your progress." />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Skip link for keyboard/screen reader users. Hidden until focused. -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="navbar-inner container">
+
+      <a href="index.html" class="navbar-logo">
+        <span class="navbar-logo-mark" aria-hidden="true">
+          <!-- Simple hand-drawn mark: three ascending steps, echoes the "learning path" idea -->
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 20V16H10V20H4Z" fill="currentColor"/>
+            <path d="M11 20V12H17V20H11Z" fill="currentColor"/>
+            <path d="M18 20V6H24V20H18Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="navbar-logo-text">Pathwork</span>
+      </a>
+
+      <nav class="navbar-nav" aria-label="Primary">
+        <ul class="navbar-links">
+          <li><a href="#courses">Explore</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#paths">Learning Paths</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+      </nav>
+
+      <form class="navbar-search" role="search" aria-label="Site search">
+        <label for="navbar-search-input" class="visually-hidden">Search courses</label>
+        <input
+          type="search"
+          id="navbar-search-input"
+          name="q"
+          placeholder="Search courses..."
+        />
+        <button type="submit" class="navbar-search-button" aria-label="Search">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7" cy="7" r="5.25" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M11 11L14.5 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </form>
+
+      <div class="navbar-actions">
+        <a href="#login" class="btn btn-text">Log in</a>
+        <a href="#signup" class="btn btn-primary">Sign up</a>
+      </div>
+
+      <!-- Mobile menu button: not functional yet, wired up with JS later -->
+      <button class="navbar-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navbar-nav">
+        <span class="navbar-toggle-bar"></span>
+        <span class="navbar-toggle-bar"></span>
+        <span class="navbar-toggle-bar"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+</main>
+
+
+</body>
+</html>

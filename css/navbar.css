@@ -1,0 +1,122 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: var(--color-surface);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  height: 72px;
+}
+
+/* --- Logo --- */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.navbar-logo-mark {
+  display: inline-flex;
+  color: var(--color-accent);
+}
+
+.navbar-logo-text {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* --- Primary links --- */
+.navbar-nav {
+  flex-shrink: 0;
+}
+
+.navbar-links {
+  display: flex;
+  gap: var(--space-5);
+}
+
+.navbar-links a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text);
+  padding-block: var(--space-2);
+  border-bottom: 2px solid transparent;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.navbar-links a:hover {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-accent);
+}
+
+/* --- Search --- */
+.navbar-search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 320px;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding-inline: var(--space-3);
+  background-color: var(--color-surface-alt);
+  transition: border-color var(--transition-fast);
+}
+
+.navbar-search:focus-within {
+  border-color: var(--color-primary-light);
+}
+
+.navbar-search input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding-block: var(--space-2);
+  font-size: 0.9rem;
+}
+
+.navbar-search input:focus {
+  outline: none;
+}
+
+.navbar-search-button {
+  display: flex;
+  align-items: center;
+  color: var(--color-text-muted);
+  padding: var(--space-1);
+}
+
+.navbar-search-button:hover {
+  color: var(--color-primary);
+}
+
+/* --- Log in / Sign up --- */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  padding: var(--space-2);
+}
+
+.navbar-toggle-bar {
+  width: 22px;
+  height: 2px;
+  background-color: var(--color-primary);
+  border-radius: 1px;
+}
