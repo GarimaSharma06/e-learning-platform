@@ -1,0 +1,268 @@
+/* .hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--color-bg);
+}
+
+.hero h1 {
+    font-size: 50px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 1.6;
+}
+
+.hero input {
+    width: 400px;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.hero button {
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: white;
+    cursor: pointer;
+}
+
+.hero-buttons {
+    margin-top: 15px;
+}
+
+.hero-buttons button {
+    padding: 12px 20px;
+}
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 60px;
+    padding: 35px 0;
+
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin: 0 0 8px;
+    color: var(--color-primary);
+}
+
+.stat p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: var(--color-bg);
+}
+
+/* Small text at the top */
+.hero-top {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+/* Main heading */
+.hero h1 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 55px;
+    line-height: 1.1;
+    max-width: 1000px;
+    margin: 0 auto 25px;
+    color: var(--color-primary);
+}
+
+/* Description */
+.hero-text {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 750px;
+    margin: 0 auto 35px;
+}
+
+/* Search box */
+.hero-search {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero-search input {
+    width: 450px;
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Search button */
+.hero-search button {
+    padding: 16px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: white;
+    cursor: pointer;
+}
+
+/* Bottom buttons */
+.hero-buttons {
+    margin-top: 40px;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    padding: 16px 30px;
+    margin: 5px;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-buttons a:hover,
+.hero-search button:hover {
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+.hero {
+  padding-block: var(--space-10);
+  background-color: var(--color-bg);
+}
+
+.hero-inner {
+  max-width: 900px;
+  text-align: center;
+  margin-inline: auto;
+  padding-block: var(--space-9);
+}
+
+.hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent-dark);
+  margin-bottom: var(--space-4);
+}
+
+.hero-heading {
+  max-width: 800px;
+  margin-inline: auto;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 0.98;
+  margin-bottom: var(--space-5);
+}
+
+.hero-subtext {
+  max-width: 680px;
+  margin-inline: auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.hero-search {
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+  margin: var(--space-6) auto 0;
+  padding: var(--space-2);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-search-icon {
+  flex-shrink: 0;
+  margin-left: var(--space-3);
+  color: var(--color-text-muted);
+}
+
+.hero-search input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  padding: var(--space-3);
+  background: transparent;
+}
+
+.hero-search-button {
+  flex-shrink: 0;
+}
+
+.hero-ctas {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.hero-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.hero-meta-number {
+  color: var(--color-primary);
+  font-weight: 600;
+} */ */
