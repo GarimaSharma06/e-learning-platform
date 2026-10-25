@@ -1,0 +1,520 @@
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 60px;
+    padding: 35px 0;
+
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin: 0 0 8px;
+    color: var(--color-primary);
+}
+
+.stat p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: var(--color-bg);
+}
+
+/* Small text at the top */
+.hero-top {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+/* Main heading */
+.hero h1 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 55px;
+    line-height: 1.1;
+    max-width: 1000px;
+    margin: 0 auto 25px;
+    color: var(--color-primary);
+}
+
+/* Description */
+.hero-text {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 750px;
+    margin: 0 auto 35px;
+}
+
+/* Search box */
+.hero-search {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero-search input {
+    width: 450px;
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Search button */
+.hero-search button {
+    padding: 16px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: white;
+    cursor: pointer;
+}
+
+/* Bottom buttons */
+.hero-buttons {
+    margin-top: 40px;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    padding: 16px 30px;
+    margin: 5px;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-buttons a:hover,
+.hero-search button:hover {
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero {
+    padding: 78px 0 82px;
+    background: linear-gradient(180deg, #FAF8F4 0%, #F7F3EB 100%);
+    border-bottom: 1px solid #E8E2D9;
+}
+
+.hero-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.02fr) minmax(420px, 0.98fr);
+    gap: 72px;
+    align-items: center;
+}
+
+.hero-copy {
+    max-width: 650px;
+}
+
+/* point to "Learn skills.Build projects.Grow your carrer" */
+.hero h1 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(3rem, 5.6vw, 5.15rem);
+    line-height: 0.99;
+    letter-spacing: -0.05em;
+    margin: 15px 0 22px;
+    color: var(--primary);
+}
+
+/* span is used to highlight->Build projects */
+.hero h1 span {
+    color: #9B5D08;
+}
+
+/* It controls the description below the heading  */
+.hero-subtext {
+    font-size: 1.06rem;
+    line-height: 1.75;
+    color: var(--muted);
+    max-width: 610px;
+    margin: 0;
+}
+
+/* controls two buttons  ->Explore learning paths, Browse courses*/
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    margin: 30px 0 25px;
+}
+
+
+/* controls the search box below the buttons */
+.search-box {
+    margin-top: 10px;
+    max-width: 610px;
+}
+
+
+.search-box label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #48596A;
+    margin-bottom: 7px;
+}
+
+/* points to search area  */
+.search-row {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 8px 25px rgba(22, 50, 79, 0.06);
+}
+
+/* ⌕ */
+.search-icon {
+    font-size: 1.55rem;
+    line-height: 1;
+    color: #687789;
+    padding: 0 10px;
+}
+
+/* this controls the input field */
+.search-row input {
+    min-width: 0;
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 10px 6px;
+    color: var(--text);
+}
+
+.search-row input::placeholder {
+    color: #82909D;
+}
+
+/* styles the search buttons */
+.search-row button {
+    border: 0;
+    border-radius: 7px;
+    padding: 10px 16px;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 600;
+}
+
+/* platform highlights-> 120+practical lessons....so on  */
+.hero-proof {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px 24px;
+    margin-top: 19px;
+    color: #65717D;
+    font-size: 0.76rem;
+}
+
+.hero-proof span {
+    position: relative;
+}
+
+.hero-proof span:not(:last-child)::after {
+    content: '•';
+    position: absolute;
+    right: -15px;
+    color: #B6A98F;
+}
+
+.hero-proof strong {
+    color: var(--primary);
+}
+
+/* right side of my hero section->dashboard  */
+.hero-visual {
+    position: relative;
+    min-height: 500px;
+    display: grid;
+    place-items: center;
+}
+
+/*  main dashboard card*/
+.dashboard-card {
+    background: #fff;
+    border: 1px solid #DCE2E8;
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+}
+
+/* controls the size and spacing of dashboard */
+.dashboard-main {
+    width: min(100%, 500px);
+    padding: 27px;
+    position: relative;
+    z-index: 2;
+}
+
+/*  Frontend Developer text on the left and 68% progress badge on right */
+.dashboard-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.mini-label,
+.path-label,
+.project-tag {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.11em;
+    color: #697887;
+}
+
+.dashboard-top h2 {
+    font-family: var(--display);
+    font-size: 1.75rem;
+    color: var(--primary);
+    line-height: 1.1;
+    margin: 5px 0 0;
+}
+
+
+/*  style the 68% badge */
+.progress-badge {
+    background: #EDF4EF;
+    color: var(--success);
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+/* these two classes create the progress bar ->it creates the background of the bar */
+.progress-line {
+    height: 7px;
+    background: #E9EDF0;
+    border-radius: 99px;
+    overflow: hidden;
+    margin: 25px 0 7px;
+}
+/* And the span fills 68% of the bar  */
+.progress-line span {
+    display: block;
+    width: 68%;
+    height: 100%;
+    background: var(--accent);
+}
+
+.progress-caption {
+    font-size: 0.73rem;
+    color: var(--muted);
+    margin: 0 0 22px;
+}
+
+/* arrange all the lessons vertically with some space */
+.lesson-list {
+    display: grid;
+    gap: 9px;
+}
+
+/* lesson has three parts->number/check marks, lesson name, arrow on the right  */
+.lesson {
+    display: grid;
+    grid-template-columns: 31px 1fr auto;
+    gap: 11px;
+    align-items: center;
+    padding: 11px 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.lesson > span {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #EDF0F3;
+    color: #566575;
+    font-family: var(--mono);
+    font-size: 0.67rem;
+}
+
+/* done class is used for completed lessons ->E.g= HTML foundations,CSS essentials */
+.lesson.done > span {
+    background: #E5F0EA;
+    color: var(--success);
+}
+
+/* which is  currently in progress*/
+.lesson.active {
+    background: #FBF5E9;
+    border-color: #E7D3A8;
+}
+
+.lesson.active > span {
+    background: var(--accent);
+    color: #fff;
+}
+
+.lesson strong {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--primary);
+}
+
+.lesson small {
+    display: block;
+    font-size: 0.68rem;
+    color: var(--muted);
+}
+
+.lesson em {
+    font-style: normal;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+
+/* small cards that are floating around the dashboard */
+.floating-card {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #DCE2E8;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(22, 50, 79, 0.12);
+    z-index: 3;
+}
+
+/* it places the project Streak card near the bottom-left of dashboard */
+.project-card {
+    left: -4px;
+    bottom: 48px;
+    padding: 13px 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.floating-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    background: #F7E7C5;
+    color: #80500B;
+}
+
+.floating-card small {
+    display: block;
+    font-family: var(--mono);
+    font-size: 0.57rem;
+    letter-spacing: 0.08em;
+    color: #6C7885;
+}
+
+.floating-card strong {
+    display: block;
+    color: var(--primary);
+    font-size: 0.83rem;
+}
+
+
+/* places the skill score card near the top-right of dashboard */
+.skill-card {
+    right: -4px;
+    top: 58px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* it creates the circular skill score */
+.skill-ring {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    /* conic-gradient->create the coloured circular progress->(84 circle)*/
+    background: conic-gradient(
+        var(--accent) 0 84%,
+        #E7EBEE 84% 100%
+    );
+    position: relative;
+}
+
+.skill-ring::before {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.skill-ring span {
+    position: relative;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+ 
+
+
+
