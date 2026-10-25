@@ -1,0 +1,137 @@
+.goals {
+  padding: 70px 20px;
+  background-color: #faf8f4;
+}
+
+
+/*controls 
+
+START WITH THE OUTCOME
+
+What are you trying to do?
+
+Choose a goal and Pathwork gives you a practical place to start. */
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+/* START WITH THE OUTCOME */
+.eyebrow {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #16324f;
+}
+
+/*  Main heading*/
+.section-heading h2 {
+  font-size: 36px;
+  margin: 10px 0;
+  color: #16324f;
+}
+
+/* description */
+.section-heading p {
+  color: #536270;
+}
+
+/* 5 cards  */
+.goal-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+/* appearance of each individual card */
+.goal-card {
+  position: relative;
+  display: block;
+  padding: 25px;
+  min-height: 280px;
+  border: 1px solid #d9d9d9;
+  border-radius: 16px;
+  background-color: white;
+  color: #16324f;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+
+/* card moves upward */
+.goal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* number */
+.goal-number {
+  font-size: 13px;
+  color: #777;
+}
+
+/* icon */
+.goal-icon {
+  float: right;
+  font-size: 25px;
+}
+
+/* card heading
+Start a career
+Improve my skills
+Build real projects
+*/
+.goal-card h3 {
+  margin-top: 50px;
+  font-size: 22px;
+}
+
+/*  description*/
+.goal-card p {
+  color: #536270;
+  line-height: 1.6;
+}
+
+
+/* links at the bottom of the card */
+.text-link {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #16324f;
+}
+
+
+/* cards colours */
+.goal-career {
+  border-top: 4px solid #16324f;
+}
+
+.goal-skills {
+  border-top: 4px solid #e7a33e;
+}
+
+.goal-projects {
+  border-top: 4px solid #6b8e23;
+}
+
+.goal-cert {
+  border-top: 4px solid #8b5cf6;
+}
+
+.goal-explore {
+  border-top: 4px solid #d16b6b;
+}
+
+@media (max-width: 1000px) {
+  .goal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .goal-grid {
+    grid-template-columns: 1fr;
+  }
+}
